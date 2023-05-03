@@ -51,7 +51,7 @@ game_images = [rock, paper, scissors, middle_finger]
 
 user_choice = int(input('What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors.\n'))
 
-if user_choice <= 2 and user_choice >= 0:
+if 2 >= user_choice >= 0:
     print(game_images[user_choice])
 else:
     print(game_images[3])
