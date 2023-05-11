@@ -23,8 +23,6 @@ if user_bet:
 
 while is_race_on:
 
-
-
     for turtle in all_turtles:
         if turtle.xcor() > 230:
             is_race_on = False
@@ -32,9 +30,11 @@ while is_race_on:
             turtle.goto(x=-110, y=0)
             turtle.hideturtle()
             if user_bet == winning_color:
-                turtle.write(arg=f'You\'ve won! The {winning_color} turtle won the race!', align='left', font=('Arial', 14, 'normal'))
+                turtle.write(arg=f'You\'ve won! The {winning_color} turtle won the race!', align='left', font=(
+                    "Arial", 14, 'normal'))
             else:
-                turtle.write(arg=f'You\'ve lost. The {winning_color} turtle won the race.', align='left', font=('Arial', 14, 'normal'))
+                turtle.write(arg=f'You\'ve lost. The {winning_color} turtle won the race.', align='left', font=(
+                    'Arial', 14, 'normal'))
 
         random_distance = randint(0, 10)
         turtle.forward(random_distance)
