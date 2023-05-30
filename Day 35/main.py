@@ -7,6 +7,7 @@ OMW_Endpoint = 'https://api.openweathermap.org/data/3.0/onecall'
 api_key = os.environ.get('OMW_API_KEY')
 account_sid = os.environ.get('TWILIO_ACCOUNT_SID')
 auth_token = os.environ.get('TWILIO_AUTH_TOKEN')
+personal_cell = os.environ.get('PERSONAL_CELL')
 
 
 parameters = {
@@ -34,6 +35,6 @@ if will_rain:
         .create(
          body="It's going to rain today. Remember to bring an umbrella.",
          from_='+18666983577',
-         to='+15129926658'
+         to=personal_cell
     )
     print(message.status)
