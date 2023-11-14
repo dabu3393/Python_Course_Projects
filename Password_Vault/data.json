@@ -1,0 +1,18 @@
+{
+    "Amazon": {
+        "username": "davisburrill@icloud.com",
+        "password": "FakePassword"
+    },
+    "Mlb": {
+        "username": "davisburrill@icloud.com",
+        "password": "NotRealPassword"
+    },
+    "Twitter": {
+        "username": "davisburrill@icloud.com",
+        "password": "Password123"
+    },
+    "Facebook": {
+        "username": "davisburrill@icloud.com",
+        "password": "12345"
+    }
+}
